@@ -1,0 +1,62 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+.tab-content { background: #fff; padding: 15px; border: 1px solid #ddd; border-top: 0;
+  border-radius: 0 0 4px 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+//解除百度地图与 bootstrap 中的 label 样式冲突的问题
+//操作方法：在百度地图的外容器上添加样式名：baidu-map
+.baidu-map label { max-width: none; }
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {background-color: #1657b4 !important;border-color: #1657b4 !important;}
+.btn-primary {background-color: #1657b4 !important;border-color: #2e6da4;}
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: white;
+    border-radius: 4px;
+}
+.page-header {
+    padding-bottom: 9px;
+    margin: 20px 0 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+.form-horizontal .control-label {
+    text-align: left;
+    margin-bottom: 0;
+    padding-top: 7px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+.panel-default {
+
+    border-color: #ddd;
+    margin: 10px;
+}
+.table > tbody > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+     border-top: 1px solid #eaf4ff;
+}
+.table > thead:first-child > tr:first-child > th {
+    border-top: 1px solid #eaf4ff;
+}

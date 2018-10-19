@@ -1,0 +1,7 @@
+@import './../../common/sass/element-ui';
+.header {  display: inline-block;height: 180px; }
+.header .logo { width: 100px; float: left; padding-top: 80px; }
+.header .app-name { padding-top: 80px; float: left; font-size: 38px; color: #000; text-shadow: 0 10px 5px #c0c0c0;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "SimHei", "WenQuanYi Micro Hei"; font-weight: bold; }
+.banner ul li { display: block; text-align: center; }
+.content {width: 480px;　display:block; margin:0 auto;}

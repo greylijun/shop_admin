@@ -1,0 +1,54 @@
+@import "./../../common/sass/element-sddt/index.css";
+// 主色匹配到 bootstrap
+.el-radio-button__orig-radio:checked + .el-radio-button__inner,
+.el-button--primary,
+.el-pager li.active {
+  background-color: #1657b4 !important; border-color: #2e6da4 !important; }
+.el-year-table td.current:not(.disabled) a.cell,
+.el-month-table td.current:not(.disabled) a.cell,
+table.el-date-table td.current:not(.disabled),
+table.el-date-table td.end-date,
+table.el-date-table td.start-date,
+.el-select-dropdown__item.selected { background-color: #1657b4 !important; }
+.el-select-dropdown__item.selected.hover { background: #286090 !important; }
+.el-pager li:hover { color: #1657b4 !important; }
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected { color: #fff; }
+// 解决选择框、输入框在一行时上下错位的 BUG
+.el-radio-group label { margin-bottom: 2px; font-weight: normal; }
+.el-input { vertical-align: middle; margin-bottom: 2px; }
+// 输入框
+.el-input__inner:focus { border-color: #66afe9 !important; }
+// 表格
+.el-table td, .el-table th {
+  padding: 5px 0;
+}
+// dialog
+.el-dialog { border-radius: 6px !important; box-shadow: 0 5px 15px rgba(0, 0, 0, .5) !important; }
+.el-dialog .el-dialog__header { border-bottom: 1px solid #e5e5e5 !important; padding: 15px; line-height: 1.4;
+  height: 50px; }
+.el-dialog .el-dialog__title { font-weight: 500 !important; }
+.el-dialog .el-dialog__body { padding: 15px !important; color: #333 !important; }
+// 分页
+.el-pagination { padding: 0 !important; }
+.el-pager li.active:hover { color: #fff !important; }
+// el-popover
+.el-popover { padding: 0 !important; border-radius: 6px !important; box-shadow: 0 5px 10px rgba(0, 0, 0, .2) !important;
+  border: 1px solid rgba(0, 0, 0, .2) !important; }
+.el-popover .panel { margin-bottom: 0 !important; border-radius: 6px; overflow: hidden; border: 0 !important; }
+.el-popover .panel-heading { background: #f7f7f7 !important; font-size: 14px !important; }
+// 侧栏自定义
+.sidebar .el-collapse { border: 0; }
+.sidebar .el-collapse .el-collapse-item .el-collapse-item__header { font-size: 14px; }
+.sidebar .el-collapse .el-collapse-item.is-active .el-collapse-item__header { background-color: #1657b4 !important;
+  color: #fff; border-bottom: 0 !important; }
+.sidebar .el-collapse .el-collapse-item.is-active .el-collapse-item__wrap { border: 1px solid #1657b4; }
+.sidebar .el-tree { background: transparent; border: 0; margin: 0 -15px; }
+// 上传组件
+input[type="file"] { display: none; }
+//角标
+.el-badge .el-badge__content { border: 0; height: 14px; line-height: 7px; padding: 3px 4px; font-size: 10px; border-radius: 6px; }
+.el-badge .el-badge__content.is-fixed { top: 11px; right: 6px; }
+// form表单样式
+.el-form-item--mini.el-form-item, .el-form-item--small.el-form-item { margin-bottom: 5px;}
+// card样式
+.el-card__body{padding:14px;}
