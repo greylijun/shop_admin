@@ -47,6 +47,25 @@ class Good extends Model
 	}
 
 	/**
+	 * 列表
+	 * @return array
+	 */
+	public function phoneLists()
+	{
+		$res = Image::with('good')->where('is_main', 1)->get();
+		$data = [];
+		foreach ($res as $row) {
+			$data[] = [
+				'id' => $row->good->id,
+				'title' => $row->good->name,
+				'mainImage' => $row->url,
+			];
+		}
+
+		return $data;
+	}
+
+	/**
 	 * 搜索
 	 * @param $name
 	 * @return array
@@ -62,6 +81,37 @@ class Good extends Model
 			];
 		}
 
+		return $data;
+	}
+
+	/**
+	 * 查看商品详情
+	 * @param $id
+	 * @return array
+	 */
+	public function detail($id)
+	{
+		$res = Good::where('id', $id)->first();
+		$data = [];
+		if ($res) {
+			$image_res = Image::where('good_id', $id)->get();
+			$image = [];
+			foreach ($image_res as $row) {
+				$image[] = [
+					'id' => $row->id,
+					'url' => $row->url
+				];
+			}
+			$data = [
+				'id' => $res->id,
+				'name' => $res->name,
+				'price' => $res->price,
+				'introduction' => $res->introduction,
+				'detail' => $res->detail,
+				'inventory' => $res->inventory,
+				'image' => $image
+			];
+		}
 		return $data;
 	}
 }

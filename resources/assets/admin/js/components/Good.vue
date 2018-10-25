@@ -386,7 +386,8 @@
                             this.imageList.dialogVisible = true;
                             this.imageList.data = response.data;
                         } else {
-                            this.$message({message: '当前不存在图片', type: 'warning'});
+                            this.imageList.data = [];
+                            this.imageList.dialogVisible = true;
                         }
 
                     })

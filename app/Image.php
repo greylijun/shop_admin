@@ -21,6 +21,14 @@ class Image extends Model
 		];
 
 	/**
+	 * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+	 */
+	public function good()
+	{
+		return $this->belongsTo(Good::class)->withDefault();
+	}
+
+	/**
 	 * 首页滑动图片
 	 * @return array
 	 */

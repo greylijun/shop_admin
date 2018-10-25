@@ -1013,7 +1013,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this4.imageList.dialogVisible = true;
                     _this4.imageList.data = response.data;
                 } else {
-                    _this4.$message({ message: '当前不存在图片', type: 'warning' });
+                    _this4.imageList.data = [];
+                    _this4.imageList.dialogVisible = true;
                 }
             }).catch(function (error) {
                 _this4.$notify.error({ message: _this4.$error2message(error) });
